@@ -21,12 +21,7 @@ class SessionsController < ApplicationController
   end
 
   private
-
-  def set_container_class
-    @container_class = "authentication-container"
-  end
-
-  def session_params
-    params.expect(user: %i[email_address password])
-  end
+    def session_params
+      params.expect(user: %i[email_address password])
+    end
 end

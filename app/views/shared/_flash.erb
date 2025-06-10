@@ -1,12 +1,12 @@
 <% if flash[:notice] %>
-  <div class="alert alert-success mt-2 shadow alert-dismissible fade show <%= @container_class %>" role="alert">
+  <div class="custom-container alert alert-success mt-2 shadow alert-dismissible fade show" role="alert">
     <%= flash[:notice] %>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 <% end %>
 
 <% if flash[:alert] %>
-  <div class="alert alert-danger mt-2 shadow alert-dismissible fade show <%= @container_class %>" role="alert">
+  <div class="custom-container alert alert-danger mt-2 shadow alert-dismissible fade show" role="alert">
     <%= flash[:alert] %>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>

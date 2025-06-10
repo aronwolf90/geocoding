@@ -18,12 +18,7 @@ class RegistrationsController < ApplicationController
   end
 
   private
-
-  def set_container_class
-    @container_class = "authentication-container"
-  end
-
-  def registration_params
-    params.expect(user: %i[ email_address password password_confirmation ])
-  end
+    def registration_params
+      params.expect(user: %i[ email_address password password_confirmation ])
+    end
 end

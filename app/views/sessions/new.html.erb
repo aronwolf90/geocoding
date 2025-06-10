@@ -2,7 +2,7 @@
 
 <%= simple_form_for @user, url: session_path do |f| %>
   <%= f.input :email_address %>
-  <%= f.input :password %>
+  <%= f.input :password, required: true %>
 
   <%= f.submit "Sign in", class: "btn btn-primary" %>
 <% end %>
