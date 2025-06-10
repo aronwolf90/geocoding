@@ -1,0 +1,10 @@
+<% content_for :title, "New account" %>
+
+<%= simple_form_for @user, url: registration_path do |f| %>
+  <%= f.input :email_address %>
+  <%= f.input :password %>
+  <%= f.input :password_confirmation %>
+
+  <%= f.submit "Create account", class: "btn btn-primary" %>
+<% end %>
+<br>

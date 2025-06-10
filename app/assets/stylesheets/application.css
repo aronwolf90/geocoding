@@ -8,3 +8,9 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.authentication-container {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}

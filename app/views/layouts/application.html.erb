@@ -22,7 +22,15 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-light">
+    <%= render "shared/navbar" %>
+    <div class="pt-3"></div>
+
+    <%= render "shared/flash" %>
+    <%= render "shared/title" %>
+
+    <div class="mt-2 shadow p-3 mb-5 bg-white rounded <%= @container_class %>">
+      <%= yield %>
+    </div>
   </body>
 </html>
