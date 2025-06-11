@@ -28,11 +28,15 @@ You can test the Dockerfile locally by running the following commands:
 
 - I used the rails auth generator: `bin/rails generate authentication`.
 - Use minimized js/css to keep the project a bit simpler (no need for Procfile).
-- Use sqlite instead PostgreSQL to keep the project simple.
+- Use SQLite instead PostgreSQL to keep the project simple.
 - Use simple_form gem to show correctly validation errors.
 - Use geocoder gem.
-- Use kamal for the docker environment because most already comes
-  configured by the rails generator.
+- Execute the gecoder asynchrony to not block requests (Yes, I know, this is a
+  bit over engineering for a demo project, but in a real world one would have to do
+  it in this way)
+- Use Kamal for the docker environment because most already comes
+  configured by the rails generator. The server is a small virtual machine hosted on
+  Hetzner.
 - Add a docker-compose file to proof that I know how docker works.
 
 
