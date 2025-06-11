@@ -1,0 +1,23 @@
+version: "3.4"
+services:
+  web:
+    build: .
+    volumes:
+      - storage:/rails/storage
+    environment:
+      - SECRET_KEY_BASE_DUMMY= "d58f05f3d6766e6fe41f3ec7094826684dd4bed29cf297d9131d621f60339746134"
+      - NO_SSL=1
+    ports:
+      - "3000:3000"
+
+  job:
+    command: "bin/jobs"
+    build: .
+    environment:
+      - SECRET_KEY_BASE_DUMMY= "d58f05f3d6766e6fe41f3ec7094826684dd4bed29cf297d9131d621f60339746134"
+      - NO_SSL=1
+    volumes:
+      - storage:/rails/storage
+
+volumes:
+  storage:
