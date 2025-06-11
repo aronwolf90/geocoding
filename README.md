@@ -3,7 +3,7 @@
 ## Local setup
 
 - Install ruby: e.g `rbenv install`
-- Make sure that you have installed sqlite.
+- Make sure that you have sqlite installed.
   * Ubuntu: `sudo apt install sqlite3`
   * Mac: `brew install sqlite`
 - Run in your console: `bin/setup`
@@ -20,5 +20,6 @@ You can see the deployed app here: `https://geocoder.webcloudpower.com/`
 ## Test docker image by docker-compose
 
 You can test the Dockerfile locally by running the following commands:
+
 - `docker-compose build`
 - `docker-compose up`

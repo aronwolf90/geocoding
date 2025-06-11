@@ -12,7 +12,11 @@ class RegistrationsControllerTest < ActionDispatch::IntegrationTest
         user: {
           email_address: "test@example.com",
           password: "testtest",
-          password_confirmation: "testtest"
+          password_confirmation: "testtest",
+          street: "Prinzstraße 1",
+          zip_code: "86153",
+          city: "Augsburg",
+          country: "Germany"
         }
       }
     end
@@ -26,7 +30,11 @@ class RegistrationsControllerTest < ActionDispatch::IntegrationTest
         user: {
           email_address: "test@example.com",
           password: "testtest",
-          password_confirmation: "other"
+          password_confirmation: "other",
+          street: "Prinzstraße 1",
+          zip_code: "86153",
+          city: "Augsburg",
+          country: "Germany"
         }
       }
     end
