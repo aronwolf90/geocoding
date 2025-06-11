@@ -14,7 +14,7 @@ class SessionsTest < ApplicationSystemTestCase
 
     assert_text "User #{@user.email_address}"
 
-    click_on "Sign Out"
+    click_on "Sign out"
     assert_text "Sign in"
   end
 end
