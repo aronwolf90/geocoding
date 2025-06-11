@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_10_204258) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_11_012426) do
   create_table "sessions", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "ip_address"
@@ -31,6 +31,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_10_204258) do
     t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "zip_code", null: false
+    t.string "street", null: false
+    t.string "city", null: false
+    t.string "country", null: false
+    t.string "latitude"
+    t.string "longitude"
+    t.string "state"
+    t.string "geolocation_process_status", default: "undefined"
     t.index ["email_address"], name: "index_users_on_email_address", unique: true
   end
 

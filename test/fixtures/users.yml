@@ -3,7 +3,15 @@
 one:
   email_address: one@example.com
   password_digest: <%= password_digest %>
+  street: Prinzstraße 1
+  zip_code: 86153
+  city: Augsburg
+  country: Germany
 
 two:
   email_address: two@example.com
   password_digest: <%= password_digest %>
+  street: Prinzstraße 2
+  zip_code: 86153
+  city: Augsburg
+  country: Germany

@@ -1,1 +1,22 @@
 <% content_for :title, "User #{@user.email_address}" %>
+
+<table class="table">
+  <tbody>
+    <tr>
+      <th>Address</th>
+      <td><%= @user.address %></td>
+    </tr>
+    <tr>
+      <th>Latitude</th>
+      <td><%= user_geolocated_attribute(@user, :latitude) %></td>
+    </tr>
+    <tr>
+      <th>Longitude</th>
+      <td><%= user_geolocated_attribute(@user, :longitude) %></td>
+    </tr>
+    <tr>
+      <th>State</th>
+      <td><%= user_geolocated_attribute(@user, :state) %></td>
+    </tr>
+  </tbody>
+</table>

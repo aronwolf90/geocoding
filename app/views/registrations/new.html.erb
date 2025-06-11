@@ -5,6 +5,13 @@
   <%= f.input :password %>
   <%= f.input :password_confirmation %>
 
+  <hr class="divider" />
+
+  <%= f.input :street %>
+  <%= f.input :zip_code %>
+  <%= f.input :city %>
+  <%= f.input :country, as: :string %>
+
   <%= f.submit "Create account", class: "btn btn-primary" %>
 <% end %>
 <br>

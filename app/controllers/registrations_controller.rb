@@ -19,6 +19,8 @@ class RegistrationsController < ApplicationController
 
   private
     def registration_params
-      params.expect(user: %i[ email_address password password_confirmation ])
+      params.expect(
+        user: %i[ email_address password password_confirmation street zip_code city country ]
+      )
     end
 end
