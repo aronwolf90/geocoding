@@ -2,8 +2,8 @@
 
 <%= simple_form_for @user, url: registration_path do |f| %>
   <%= f.input :email_address %>
-  <%= f.input :password %>
-  <%= f.input :password_confirmation %>
+  <%= f.input :password, required: true %>
+  <%= f.input :password_confirmation, required: true %>
 
   <hr class="divider" />
 
