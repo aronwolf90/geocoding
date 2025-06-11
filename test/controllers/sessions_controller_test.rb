@@ -5,13 +5,13 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
     @user = users(:one)
   end
 
-  test "redirects to new session path from root when not sign in" do
+  test "redirects to new session path from root when the user is not signed in" do
     get root_path
 
     assert_redirected_to new_session_path
   end
 
-  test "can open sessions new page" do
+  test "can open sessions/new page" do
     get new_session_path
     assert_response :success
   end

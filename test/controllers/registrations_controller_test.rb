@@ -24,7 +24,7 @@ class RegistrationsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to new_session_path
   end
 
-  test "shows validations errors when params are invalid" do
+  test "shows validation errors when params are invalid" do
     assert_no_difference("User.count") do
       post registration_path, params: {
         user: {
